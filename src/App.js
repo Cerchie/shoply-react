@@ -10,6 +10,7 @@ import rootReducer from './reducers/rootReducer'
 import { useSelector, useDispatch } from "react-redux";
 import {Provider} from 'react-redux'
 import data from './reducers/data'
+import './styles.css'
 
 function App() {
 

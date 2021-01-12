@@ -1,0 +1,13 @@
+h1 {
+    font-family: 'Lato', sans-serif;
+
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.img {
+    border: 2px solid black;
+    border-radius: 30%;
+}

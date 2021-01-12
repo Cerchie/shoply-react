@@ -7,7 +7,7 @@ function CartItem ({key, name, price, description, image_url, deleteItem, addIte
    if (name === undefined)
     {return (
         <div>
-            <p>{name} {price} {description} <img width="100"src={image_url} alt=""/></p>
+            <p>{name} {price} {description} <img class="img" width="100"src={image_url} alt=""/></p>
             {/* <button>Remove from cart</button>
             <button>Add to cart</button> */} 
         </div>
