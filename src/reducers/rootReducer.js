@@ -11,7 +11,7 @@ function rootReducer(state = INITIAL_STATE, action){
                 ]}
             case 'REMOVE_FROM_CART':
                 return {...state, 
-                    cart_items: state.cart_items.filter(cart_item => cart_item.id !== action.id)
+                    cart_items: []
                 }
             default:
                 return state;
