@@ -14,7 +14,7 @@ function CartItem ({key, name, price, description, image_url, deleteItem, addIte
     )}
     return (
         <div>
-            <p>{name} {price} {description} <img width="100"src={image_url} alt=""/></p>
+            <p>{name} <img width="100"src={image_url} alt=""/></p>
             <button onClick={handleDelete}>Remove from cart</button>
             <button onClick={addItem}>Add to cart</button>
         </div>
