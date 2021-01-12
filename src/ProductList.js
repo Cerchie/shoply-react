@@ -9,7 +9,7 @@ import rootReducer from './reducers/rootReducer'
 import { useSelector, useDispatch } from "react-redux";
 import {Provider} from 'react-redux'
 import CartItem from './CartItem'
-import { v4 as uuidv4 } from 'uuid';
+
 
 
 function ProductList(){
@@ -17,7 +17,7 @@ function ProductList(){
 const cart_items = useSelector(st => st.cart_items);
 const total_products = useSelector(st => st.total_products)
 const dispatch = useDispatch();
-const id = uuidv4();
+
 console.log("DATA FROM PRODUCT LIST", Object.entries(total_products.products))
   function addItem(newItem) {
     dispatch({ type: "ADD_TO_CART", cart_item: newItem });
@@ -36,7 +36,7 @@ return (
                 <p>Number of items in cart: {cart_items.length}</p>
         {arrays_to_map[0].map(p => (
     <CartItem
-      key={id}
+      key={p.id}
       name={p.name}
       price={p.price}
       description={p.description}
@@ -47,7 +47,7 @@ return (
         ))}
         {arrays_to_map[1].map(p => (
     <CartItem
-      key={id}
+      key={p.id}
       name={p.name}
       price={p.price}
       description={p.description}
@@ -58,7 +58,7 @@ return (
         ))}
         {arrays_to_map[2].map(p => (
     <CartItem
-      key={id}
+      key={p.id}
       name={p.name}
       price={p.price}
       description={p.description}
@@ -69,7 +69,7 @@ return (
         ))}
         {arrays_to_map[3].map(p => (
     <CartItem
-      key={id}
+      key={p.id}
       name={p.name}
       price={p.price}
       description={p.description}
@@ -80,7 +80,7 @@ return (
         ))}
         {arrays_to_map[4].map(p => (
     <CartItem
-      key={id}
+      key={p.id}
       name={p.name}
       price={p.price}
       description={p.description}
@@ -91,7 +91,7 @@ return (
         ))}
             {arrays_to_map[5].map(p => (
     <CartItem
-      key={id}
+      key={p.id}
       name={p.name}
       price={p.price}
       description={p.description}
